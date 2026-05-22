@@ -49,3 +49,51 @@ This week also helped clarify the role of each part of the project:
 - **The future paid beta version** will offer a more complete opportunity path, including a short human-reviewed note from CIL.
 
 The project is now moving toward an app-first development phase for Week 3.
+
+## Week 3 / Early Week 4 Progress
+
+This update marks the transition from product validation into the first technical foundation of the CIL Market Bridge app.
+
+### What moved forward
+
+After refining the landing page based on focus group feedback, the project direction became clearer:
+
+- The landing page is not meant to solve the full problem.
+- Its role is to help businesses recognize whether they may have a real issue worth exploring.
+- The app will become the core product experience.
+
+This week, we started building the first technical foundation of the app using:
+
+- Next.js
+- TypeScript
+- React
+- Tailwind CSS
+
+The initial app structure has been uploaded to GitHub.
+
+### App direction
+
+CIL Market Bridge is being designed as an interactive app that helps small and mid-sized businesses turn uncertainty about blockchain into a clearer evaluation path.
+
+The planned product flow is:
+
+Landing page → interactive app → free case map → paid beta Opportunity Path.
+
+### Freemium model
+
+The app will include:
+
+- A simple free version that helps users organize their business concern and receive an initial case map.
+- A paid beta version priced at USD 5, offering a deeper Opportunity Path and a short human-reviewed note from CIL.
+
+### Current technical status
+
+The repository now includes the initial app foundation:
+
+- app structure,
+- layout,
+- global styles,
+- landing screen for the app foundation,
+- project configuration files.
+
+The next technical step is to connect the repository to Vercel and prepare the first interactive flow.
