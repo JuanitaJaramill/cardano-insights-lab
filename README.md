@@ -97,3 +97,53 @@ The repository now includes the initial app foundation:
 - project configuration files.
 
 The next technical step is to connect the repository to Vercel and prepare the first interactive flow.
+
+## Week 4 Progress — Beta App Foundation
+
+This week marks the beginning of the beta phase for the CIL Market Bridge app.
+
+The first technical foundation of the app is now live on Vercel:
+
+App: https://cil-market-bridge.vercel.app/
+
+This initial version is not the final product. It is the starting point for the interactive experience we are building.
+
+### What this beta phase means
+
+CIL Market Bridge is moving from concept and landing-page validation into an app-first development phase.
+
+The current beta foundation introduces:
+
+- the main product direction,
+- the planned user flow,
+- the initial visual structure,
+- the key business areas the app will help users explore,
+- and the first public deployment of the app.
+
+### Product direction
+
+The app is being designed to help small and mid-sized businesses turn confusion about blockchain into a clearer evaluation path.
+
+The goal is not to tell every business that it needs blockchain.
+
+The goal is to help users:
+
+- recognize the business problem,
+- identify the areas involved,
+- understand whether the case may be worth exploring,
+- receive a simple free case map,
+- and eventually unlock a paid beta Opportunity Path with a short human-reviewed note from CIL.
+
+### Next steps
+
+As development continues, the app will become more useful, interactive, and business-oriented.
+
+Upcoming improvements include:
+
+- a guided flow for selecting business concerns,
+- interactive cards for payments, traceability, certificates, trust, transparency, and disputes,
+- a simple free case map,
+- a clearer route toward the paid beta version,
+- and better tools to help users understand whether blockchain deserves a place in the conversation.
+
+This week establishes the beta foundation. The next phase is about making the app more practical, more interactive, and more valuable for real users.
