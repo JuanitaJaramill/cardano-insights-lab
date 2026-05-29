@@ -146,5 +146,73 @@ Upcoming improvements include:
 - a clearer route toward the paid beta version,
 - and better tools to help users understand whether blockchain deserves a place in the conversation.
 
+
+## Week 4 Progress — First Interactive Case Map Flow
+
+This update marks the first functional version of the CIL Market Bridge beta app.
+
+The app is now live on Vercel:
+
+App: https://cil-market-bridge.vercel.app/
+
+### What changed
+
+CIL Market Bridge is no longer only a landing page or a static app foundation.
+
+The beta app now includes its first interactive flow:
+
+* users can start the guided experience,
+* select the business areas connected to their concern,
+* describe what is happening in their case,
+* choose an organization type,
+* and generate a simple free case map.
+
+### Current free flow
+
+The current beta version helps users identify whether their business concern touches areas such as:
+
+* payments,
+* traceability,
+* certificates and verification,
+* trust between actors,
+* transparency,
+* disputes and authenticity.
+
+Based on the selected areas, the app generates a preliminary reading and shows whether the case may be:
+
+* an early signal,
+* worth exploring further,
+* or a stronger signal for deeper review.
+
+### Product value
+
+This first interactive flow supports the core purpose of CIL Market Bridge:
+
+helping small and mid-sized businesses turn confusion about blockchain into a clearer evaluation path.
+
+The app does not tell every business that it needs blockchain. Instead, it helps users organize the problem, recognize the areas involved, and understand whether the case may deserve a closer look before investing in vendors, pilots, or technology that may not fit.
+
+### Paid beta path
+
+The app also introduces the future paid beta path.
+
+The next version will work toward a USD 5 paid beta experience, including:
+
+* a deeper Opportunity Path,
+* clearer recommendations,
+* and a short human-reviewed note from CIL.
+
+### Next steps
+
+Upcoming improvements include:
+
+* showing the user’s written case description inside the result,
+* improving the result language to feel more personal and useful,
+* refining the free case map,
+* preparing the paid beta path,
+* and continuing to make the app more interactive and business-oriented.
+
+This week confirms that the project has moved from validation and positioning into a functional beta app experience.
+
 This week establishes the beta foundation. The next phase is about making the app more practical, more interactive, and more valuable for real users.
 
