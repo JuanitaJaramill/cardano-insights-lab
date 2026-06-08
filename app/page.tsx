@@ -110,7 +110,7 @@ export default function Home() {
       return {
         label: "Strong signal for deeper review",
         description:
-          "Your case combines several areas that may involve coordination, verification, trust, or operational risk.",
+          "Your case combines several business areas. This may involve coordination, verification, trust, operational risk, or several actors depending on the same information.",
       };
     }
 
@@ -118,15 +118,27 @@ export default function Home() {
       return {
         label: "Worth exploring further",
         description:
-          "Your case connects more than one business concern, which may justify a clearer evaluation path before choosing a technology.",
+          "Your case connects more than one business concern. That may justify a clearer evaluation path before choosing a technology or vendor.",
       };
     }
 
     return {
       label: "Early signal",
       description:
-        "Your case touches one relevant area. It may still be useful to clarify whether a simpler tool could solve it first.",
+        "Your case touches one relevant area. It may still be useful to clarify whether a simpler tool could solve the problem before considering blockchain.",
     };
+  }, [selectedAreas.length]);
+
+  const suggestedNextStep = useMemo(() => {
+    if (selectedAreas.length >= 4) {
+      return "Your case shows multiple overlapping signals. A deeper review may help identify whether blockchain is relevant, or whether a simpler architecture would be enough.";
+    }
+
+    if (selectedAreas.length >= 2) {
+      return "Your case connects several business concerns. A useful next step would be to map who needs to trust, verify, or act on the information.";
+    }
+
+    return "Start by clarifying whether this problem can be solved with a simpler tool before considering blockchain.";
   }, [selectedAreas.length]);
 
   const resetFlow = () => {
@@ -232,6 +244,16 @@ export default function Home() {
               {explorationLevel.description}
             </p>
 
+            <div className="mt-8 rounded-3xl border border-white/10 bg-[#0f0a19]/50 p-6">
+              <h2 className="text-xl font-bold text-white">
+                Your case summary
+              </h2>
+
+              <p className="mt-4 leading-7 text-[#ddd3ee]">
+                {caseDescription}
+              </p>
+            </div>
+
             <div className="mt-8 grid gap-6 lg:grid-cols-2">
               <div className="rounded-3xl border border-white/10 bg-[#0f0a19]/50 p-6">
                 <h2 className="text-xl font-bold text-white">
@@ -252,7 +274,7 @@ export default function Home() {
 
               <div className="rounded-3xl border border-white/10 bg-[#0f0a19]/50 p-6">
                 <h2 className="text-xl font-bold text-white">
-                  Organization context
+                  Your business context
                 </h2>
 
                 <p className="mt-4 text-[#ddd3ee]">{organizationType}</p>
@@ -261,7 +283,7 @@ export default function Home() {
 
             <div className="mt-8 rounded-3xl border border-white/10 bg-[#0f0a19]/50 p-6">
               <h2 className="text-xl font-bold text-white">
-                Preliminary reading
+                What this may suggest
               </h2>
 
               <div className="mt-5 space-y-4">
@@ -276,9 +298,19 @@ export default function Home() {
               </div>
             </div>
 
+            <div className="mt-8 rounded-3xl border border-white/10 bg-[#0f0a19]/50 p-6">
+              <h2 className="text-xl font-bold text-white">
+                Suggested next step
+              </h2>
+
+              <p className="mt-3 leading-7 text-[#ddd3ee]">
+                {suggestedNextStep}
+              </p>
+            </div>
+
             <div className="mt-8 rounded-3xl border border-[#d8bbff]/30 bg-[#d8bbff]/10 p-6">
               <h2 className="text-xl font-bold text-white">
-                Important note
+                Before jumping into technology
               </h2>
 
               <p className="mt-3 leading-7 text-[#ddd3ee]">
@@ -291,7 +323,7 @@ export default function Home() {
 
             <div className="mt-8 rounded-3xl border border-white/10 bg-white/[0.06] p-6">
               <h2 className="text-xl font-bold text-white">
-                Next step: paid beta path
+                Want a clearer path?
               </h2>
 
               <p className="mt-3 leading-7 text-[#ddd3ee]">
@@ -322,7 +354,7 @@ export default function Home() {
           </p>
 
           <h1 className="text-4xl font-black leading-tight text-white md:text-5xl">
-            Select the areas connected to your business concern.
+            What areas are connected to your business concern?
           </h1>
 
           <p className="mt-5 max-w-3xl text-lg leading-8 text-[#ddd3ee]">
