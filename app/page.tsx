@@ -80,11 +80,18 @@ const organizationTypes = [
   "Other",
 ];
 
+const betaRequestUrl = "https://tally.so/r/44A4xX";
+
+function isValidEmail(email: string) {
+  return /\S+@\S+\.\S+/.test(email);
+}
+
 export default function Home() {
   const [started, setStarted] = useState(false);
   const [selectedAreas, setSelectedAreas] = useState<AreaId[]>([]);
   const [caseDescription, setCaseDescription] = useState("");
   const [organizationType, setOrganizationType] = useState("");
+  const [contactEmail, setContactEmail] = useState("");
   const [showResult, setShowResult] = useState(false);
 
   const selectedAreaObjects = useMemo(
@@ -103,7 +110,8 @@ export default function Home() {
   const canGenerateResult =
     selectedAreas.length > 0 &&
     caseDescription.trim().length > 20 &&
-    organizationType.length > 0;
+    organizationType.length > 0 &&
+    isValidEmail(contactEmail);
 
   const explorationLevel = useMemo(() => {
     if (selectedAreas.length >= 4) {
@@ -146,6 +154,7 @@ export default function Home() {
     setSelectedAreas([]);
     setCaseDescription("");
     setOrganizationType("");
+    setContactEmail("");
     setShowResult(false);
   };
 
@@ -278,6 +287,10 @@ export default function Home() {
                 </h2>
 
                 <p className="mt-4 text-[#ddd3ee]">{organizationType}</p>
+
+                <p className="mt-3 text-sm text-[#cfc4df]">
+                  Follow-up contact: {contactEmail}
+                </p>
               </div>
             </div>
 
@@ -322,22 +335,42 @@ export default function Home() {
             </div>
 
             <div className="mt-8 rounded-3xl border border-white/10 bg-white/[0.06] p-6">
-              <h2 className="text-xl font-bold text-white">
-                Want a clearer path?
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-[#c8a6ff]">
+                Beta paid path
+              </p>
+
+              <h2 className="text-2xl font-black text-white">
+                Beta Opportunity Path — USD 5
               </h2>
 
               <p className="mt-3 leading-7 text-[#ddd3ee]">
-                The next version of CIL Market Bridge will offer a paid beta
-                Opportunity Path for USD 5, including a deeper review and a
-                short human-reviewed note from CIL.
+                The paid beta version will offer a deeper reading of your case,
+                including a clearer opportunity path and a short human-reviewed
+                note from CIL.
               </p>
 
-              <button
-                type="button"
-                className="mt-5 rounded-full bg-[#d8bbff] px-6 py-3 text-sm font-bold text-[#241334] opacity-70"
+              <ul className="mt-5 space-y-3 text-[#ddd3ee]">
+                <li>• A deeper review of the selected business areas.</li>
+                <li>• Signals that may point toward blockchain relevance.</li>
+                <li>• Caution signals where simpler tools may be enough.</li>
+                <li>• A suggested next step for exploration.</li>
+                <li>• A short human-reviewed note from CIL during beta.</li>
+              </ul>
+
+              <a
+                href={betaRequestUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-6 inline-flex rounded-full bg-[#d8bbff] px-6 py-3 text-sm font-bold text-[#241334] transition hover:bg-[#e6d3ff]"
               >
-                Paid beta coming soon
-              </button>
+                Request Beta Opportunity Path
+              </a>
+
+              <p className="mt-4 text-sm leading-6 text-[#cfc4df]">
+                Payment integration is being prepared. During this beta stage,
+                this button opens the current request form while the paid flow is
+                finalized.
+              </p>
             </div>
           </div>
         </section>
@@ -447,10 +480,30 @@ export default function Home() {
               ))}
             </select>
 
+            <label
+              htmlFor="contactEmail"
+              className="mt-6 block text-xl font-bold text-white"
+            >
+              Contact email
+            </label>
+
+            <p className="mt-2 text-sm leading-6 text-[#cfc4df]">
+              This helps CIL follow up if you request the beta Opportunity Path.
+            </p>
+
+            <input
+              id="contactEmail"
+              type="email"
+              value={contactEmail}
+              onChange={(event) => setContactEmail(event.target.value)}
+              className="mt-4 w-full rounded-2xl border border-white/10 bg-[#0f0a19] p-4 text-[#f7f4ff] outline-none transition placeholder:text-[#8d7da3] focus:border-[#d8bbff]"
+              placeholder="name@example.com"
+            />
+
             <div className="mt-6 rounded-2xl bg-[#d8bbff]/10 p-4 text-sm leading-6 text-[#ddd3ee]">
               This free version gives you a simple case map. The paid beta path
-              will later offer a deeper review and a short human-reviewed note
-              from CIL.
+              will offer a deeper review and a short human-reviewed note from
+              CIL.
             </div>
           </div>
         </div>
@@ -477,7 +530,8 @@ export default function Home() {
         {!canGenerateResult && (
           <p className="mt-4 text-sm text-[#cfc4df]">
             To generate your free case map, select at least one area, describe
-            your case with a bit of context, and choose an organization type.
+            your case with a bit of context, choose an organization type, and
+            add a valid email.
           </p>
         )}
       </section>
