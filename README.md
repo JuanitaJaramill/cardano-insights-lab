@@ -302,4 +302,103 @@ Upcoming work will focus on:
 
 This week moves the project closer to a complete beta product: free orientation first, then a clearer paid path for deeper review.
 
+## Weeks 6 and 7 Update — Testing, Refinement, and Initial Marketing
+
+After completing the functional foundation of the beta flow in Week 5, CIL Market Bridge is entering a new stage focused on testing, corrections, product refinement, and initial marketing.
+
+The app now has its first functional beta experience:
+
+Landing → App → Free Case Map → Beta Opportunity Path
+
+Beta app: https://cil-market-bridge.vercel.app/
+
+During Weeks 6 and 7, the goal is to review how this experience works with real use cases, improve what needs to be adjusted, and begin communicating the beta more clearly to attract early users.
+
+### Week 6 — Testing and Product Refinement
+
+Week 6 focuses on testing the beta app with different business cases and identifying possible points of confusion in the user flow.
+
+Testing will help answer questions such as:
+
+* Is the flow clear for a non-technical user?
+* Do the questions help organize the business problem?
+* Does the Free Case Map feel useful?
+* Is the preliminary reading clear or too generic?
+* Is the path toward the Beta Opportunity Path easy to understand?
+* Is the connection between the landing page and the app clear enough?
+
+The goal for this week is to improve the language, structure, calls to action, and user experience before expanding public communication.
+
+This phase will also review whether the free flow achieves its main purpose: helping users organize their concern before jumping directly into a technology solution.
+
+### Week 7 — Initial Marketing and Beta Visibility
+
+Week 7 focuses on beginning a clearer marketing and distribution effort around the beta.
+
+The goal is to invite early users, explain the product more clearly, and position CIL Market Bridge as a practical tool for exploring business problems before deciding whether blockchain deserves a place in the conversation.
+
+The communication work will focus on:
+
+* explaining the problem before talking about blockchain,
+* presenting the app as a practical tool rather than a theoretical concept,
+* inviting early users to test the beta,
+* sharing public updates about the process,
+* using visual assets to make the project more recognizable,
+* communicating the value of the Free Case Map in simple language,
+* and presenting the Beta Opportunity Path as a deeper review route.
+
+Public communication will remain clear, educational, and trust-oriented.
+
+CIL Market Bridge is not being presented as a generic blockchain product. It is being positioned as a guided bridge between real business problems and clearer technology evaluation.
+
+### Free Case Map
+
+The Free Case Map is the center of the beta experience.
+
+Its purpose is to help users organize a business concern before jumping directly into a technology solution.
+
+The free flow works around areas such as:
+
+* payments,
+* traceability,
+* certificates and verification,
+* trust between actors,
+* transparency,
+* disputes and authenticity.
+
+After completing the flow, the user receives a preliminary reading that shows the areas involved, the business context, the case summary, and a suggested next step.
+
+### Beta Opportunity Path
+
+The app also presents a paid beta route:
+
+**Beta Opportunity Path — USD 5**
+
+This path is designed as a deeper review of the case, including:
+
+* a more detailed reading of the selected business areas,
+* signals that may point toward blockchain relevance,
+* caution signals where a simpler tool may be enough,
+* a suggested next step,
+* and a short human-reviewed note from CIL during the beta stage.
+
+Payment integration will be a later improvement. At this stage, the goal is to make the commercial route clear and validate whether users understand the value of a deeper review.
+
+### Expected Outcome by the End of Week 7
+
+By the end of this work block, CIL Market Bridge should have:
+
+* a clearer functional beta,
+* a Free Case Map tested with different cases,
+* a visible paid beta path,
+* early user observations,
+* more refined product language,
+* more consistent public communication,
+* and an initial foundation for attracting early users.
+
+This stage marks the shift from building the app to validating it as a product.
+
+The beta should not only work. It should be understood, tested, and communicated.
+
+
 
