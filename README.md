@@ -216,3 +216,90 @@ This week confirms that the project has moved from validation and positioning in
 
 This week establishes the beta foundation. The next phase is about making the app more practical, more interactive, and more valuable for real users.
 
+## Week 5 Progress — Improved Beta App Flow
+
+This update improves the first functional beta flow of CIL Market Bridge.
+
+The app is live on Vercel:
+
+App: https://cil-market-bridge.vercel.app/
+
+### What improved
+
+This week focused on making the free beta experience more useful, personal, and closer to a complete product flow.
+
+The app now includes:
+
+* a guided free case map flow,
+* selectable business areas,
+* a written case description field,
+* organization type selection,
+* contact email capture,
+* a personalized case summary inside the result,
+* a clearer preliminary reading,
+* a suggested next step,
+* and a visible path toward the paid beta version.
+
+### Free Case Map
+
+The free version now helps users organize their business concern around areas such as:
+
+* payments,
+* traceability,
+* certificates and verification,
+* trust between actors,
+* transparency,
+* disputes and authenticity.
+
+After completing the flow, users receive a simple case map that shows:
+
+* the areas involved,
+* the business context,
+* the case summary written by the user,
+* preliminary signals,
+* and a suggested next step.
+
+This makes the free version more useful as an initial orientation tool.
+
+### Paid Beta Path
+
+The app now introduces the future paid beta offer more clearly:
+
+**Beta Opportunity Path — USD 5**
+
+This paid beta path is designed to include:
+
+* a deeper review of the selected business areas,
+* signals that may point toward blockchain relevance,
+* caution signals where simpler tools may be enough,
+* a suggested next step for exploration,
+* and a short human-reviewed note from CIL during beta.
+
+The current button opens the existing request form while payment integration is being prepared.
+
+### Product direction
+
+CIL Market Bridge is being developed as an app that helps small and mid-sized businesses turn confusion about blockchain into a clearer evaluation path.
+
+The goal is not to tell every business that it needs blockchain.
+
+The goal is to help users:
+
+* organize the problem,
+* identify the areas involved,
+* understand whether the case may deserve a closer look,
+* and move toward a clearer decision before investing in vendors, pilots, or technology that may not fit.
+
+### Next steps
+
+Upcoming work will focus on:
+
+* refining the result logic,
+* improving the paid beta path,
+* preparing payment integration,
+* improving the user experience,
+* and continuing to test the app with real users.
+
+This week moves the project closer to a complete beta product: free orientation first, then a clearer paid path for deeper review.
+
+
