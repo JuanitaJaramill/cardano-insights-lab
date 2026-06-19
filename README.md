@@ -400,5 +400,127 @@ This stage marks the shift from building the app to validating it as a product.
 
 The beta should not only work. It should be understood, tested, and communicated.
 
+## Weeks 8 and 9 Update — Modular App Structure and Smarter Case Mapping
+
+During Weeks 8 and 9, the main focus was reorganizing the CIL Market Bridge beta app and preparing its technical structure for future product improvements.
+
+The app is live on Vercel:
+
+https://cil-market-bridge.vercel.app/
+
+### Modular App Structure
+
+The original beta flow was contained mainly inside a single `page.tsx` file.
+
+Although the first version was functional, keeping the interface, business data, state management, and result logic in one file would make future changes more difficult and increase the risk of breaking the app.
+
+The codebase was reorganized into a clearer modular structure:
+
+```text
+app/
+├── components/
+│   ├── StartScreen.tsx
+│   ├── CaseForm.tsx
+│   └── CaseResult.tsx
+├── data/
+│   └── marketBridgeData.ts
+├── lib/
+│   └── resultLogic.ts
+├── types/
+│   └── marketBridge.ts
+└── page.tsx
+```
+
+Each part now has a clearer responsibility:
+
+* `StartScreen.tsx` manages the opening experience.
+* `CaseForm.tsx` contains the business areas, case description, organization type, and contact email.
+* `CaseResult.tsx` displays the Free Case Map and the deeper beta path.
+* `marketBridgeData.ts` stores the business areas, organization types, and external links.
+* `resultLogic.ts` contains the evaluation logic.
+* `marketBridge.ts` defines the shared application data types.
+* `page.tsx` manages the user flow and connects the components.
+
+This structure makes the beta easier to maintain, test, correct, and expand.
+
+### Smarter Result Logic
+
+The Free Case Map now goes beyond counting how many business areas were selected.
+
+The app can recognize combinations of concerns and use them to generate a more relevant preliminary reading.
+
+Examples include:
+
+* Payments + Disputes → transactional friction.
+* Traceability + Certificates → traceability and verification.
+* Trust + Transparency → trust and visibility challenges.
+* Certificates + Disputes → authenticity and evidence concerns.
+* Traceability + Certificates + Trust → shared verification challenges.
+
+The result now includes:
+
+* an exploration level,
+* a main pattern detected,
+* a description of the pattern,
+* the user’s case summary,
+* the selected business areas,
+* the organization context,
+* signals connected to each selected area,
+* and a suggested next step.
+
+The app still avoids assuming that blockchain is automatically the right solution. The purpose remains to help users understand the business problem before selecting technology.
+
+### Improved User Flow
+
+The result screen now gives users two different navigation options:
+
+* **Edit my case** returns to the form while preserving the information already entered.
+* **Start a new case** clears the current information and begins a new evaluation.
+
+This makes it easier for users to correct, refine, or test different cases without repeating the entire process unnecessarily.
+
+### Privacy and Beta Transparency
+
+The beta now includes clearer guidance asking users not to submit confidential, sensitive, or private business information.
+
+The result screen also explains that information submitted through future request or feedback forms will be used only to respond to the request and improve CIL Market Bridge.
+
+### Deployment Correction
+
+During the code reorganization, one component was initially created in an incorrect nested directory.
+
+The file structure was corrected, the misplaced component was removed, and the modular version was successfully deployed to production through Vercel.
+
+### Current Beta Status
+
+The current app includes:
+
+* a guided start screen,
+* selectable business concern areas,
+* a written case description,
+* organization type and email fields,
+* a Free Case Map,
+* combination-based result logic,
+* editable case information,
+* a visible Beta Opportunity Path,
+* a privacy notice,
+* and a prepared space for beta feedback.
+
+### Next Steps
+
+The next development phase will focus on:
+
+* connecting a functional beta feedback form,
+* connecting the Beta Opportunity Path request flow,
+* testing the app with real business cases,
+* reviewing the mobile experience,
+* refining the result combinations,
+* and later activating the USD 5 payment path.
+
+Weeks 8 and 9 strengthened the technical foundation of CIL Market Bridge.
+
+The beta is now better organized, easier to extend, and more prepared for user testing and future product development.
+
+
 
 
