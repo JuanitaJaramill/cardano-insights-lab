@@ -521,6 +521,107 @@ Weeks 8 and 9 strengthened the technical foundation of CIL Market Bridge.
 
 The beta is now better organized, easier to extend, and more prepared for user testing and future product development.
 
+# Weeks 10–11 Update: Payment Flow and Clearer User Entry
+
+During Weeks 10 and 11, CIL Market Bridge moved beyond presenting an initial case analysis and began testing a complete user journey.
+
+The main focus was to connect the free experience with the paid Beta Opportunity Path.
+
+## PayPal payment flow
+
+A PayPal checkout flow was added to the application.
+
+The payment process now follows this path:
+
+**Free Case Map → Beta Opportunity Path → PayPal payment → Opportunity Path request form**
+
+The integration includes:
+
+* a PayPal checkout component inside the case result page,
+* server-side order creation,
+* server-side payment capture,
+* secure environment variables in Vercel,
+* Sandbox testing before enabling real payments,
+* and a confirmation step before the user continues to the paid request form.
+
+The Beta Opportunity Path remains priced at **USD 5**.
+
+The payment flow was successfully tested in PayPal Sandbox, including order creation, checkout approval, payment capture, and access to the next step.
+
+## Why the payment flow matters
+
+Until this stage, CIL Market Bridge could help users organize and interpret a business concern through the Free Case Map.
+
+The new payment flow adds a conversion path.
+
+Users can now move from an initial automated result to a deeper review that includes:
+
+* a more detailed reading of the selected business areas,
+* possible blockchain and coordination signals,
+* warnings when a simpler solution may be enough,
+* a practical exploration path,
+* and a short human-reviewed note from CIL.
+
+This does not automatically recommend blockchain. The purpose remains to help users evaluate the problem before investing in technology, vendors, or pilots that may not fit.
+
+## Landing page improvement
+
+The landing page was also updated to create a clearer transition into the application.
+
+The previous call to action was too general and did not explain what the user would receive.
+
+The new message focuses on the actual value of the experience:
+
+> Not every business problem needs blockchain. Some are worth evaluating more carefully.
+
+The landing page now explains that users can explore challenges involving:
+
+* payments,
+* trust,
+* traceability,
+* certificates,
+* disputes,
+* and coordination.
+
+It also makes clear that the user receives a free initial case map before making any further decision.
+
+The new call to action is:
+
+**Create your free case map**
+
+This creates a clearer product journey:
+
+**Landing page → CIL Market Bridge app → Free Case Map → Beta Opportunity Path → PayPal checkout → deeper review request**
+
+## Technical work completed
+
+The following elements were added or updated:
+
+* `PayPalButton.tsx`
+* PayPal order creation API route
+* PayPal payment capture API route
+* PayPal environment variables in Vercel
+* payment confirmation state
+* connection between payment approval and the Opportunity Path request form
+* updated landing page copy and call to action
+
+## Current status
+
+CIL Market Bridge now includes:
+
+* a guided business case flow,
+* a Free Case Map,
+* combination-based result logic,
+* editable and restartable cases,
+* a paid Beta Opportunity Path,
+* PayPal checkout,
+* and a clearer entry point from the landing page.
+
+The next step is to complete controlled user testing with real cases and prepare the product demo.
+
+The demo and final presentation will be documented as the Week 12 update.
+
+
 
 
 
