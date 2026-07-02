@@ -20,7 +20,7 @@ export default function PayPalButton({
 
   if (!clientId) {
     return (
-      <p className="mt-5 text-sm text-red-300">
+     <p className="mt-4 text-sm font-medium leading-6 text-red-700">
         PayPal is not configured yet.
       </p>
     );
@@ -50,7 +50,7 @@ export default function PayPalButton({
   }
 
   return (
-    <div className="mt-6 max-w-md">
+    <div className="mt-6 max-w-md rounded-2xl bg-white p-4 text-[#17121f] shadow-lg [color-scheme:light]">
       <PayPalScriptProvider
         options={{
           clientId,
