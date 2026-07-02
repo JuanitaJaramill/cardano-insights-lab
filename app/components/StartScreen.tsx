@@ -36,9 +36,7 @@ export default function StartScreen({ onStart }: StartScreenProps) {
                 Start exploring
               </button>
 
-              <div className="rounded-full border border-white/15 px-7 py-4 text-base font-medium text-[#ddd3ee]">
-                Free case map · Beta version
-              </div>
+              
             </div>
           </div>
 
