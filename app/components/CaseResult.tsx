@@ -5,7 +5,6 @@ import {
 } from "../data/marketBridgeData";
 import { buildExplorationResult } from "../lib/resultLogic";
 import type { CaseData } from "../types/marketBridge";
-import PayPalButton from "./PayPalButton";
 type CaseResultProps = {
   caseData: CaseData;
   onEditCase: () => void;
@@ -180,7 +179,14 @@ export default function CaseResult({
               <li>• A short human-reviewed note from CIL.</li>
             </ul>
 
-            <PayPalButton betaRequestUrl={betaRequestUrl} />
+           <a
+  href="https://cardanolab.gumroad.com/l/qeopiz"
+  target="_blank"
+  rel="noreferrer"
+  className="mt-6 inline-flex rounded-full bg-[#d8bbff] px-6 py-3 text-sm font-bold text-[#241334] transition hover:bg-[#e6d3ff]"
+>
+  Unlock Beta Opportunity Path — USD 5
+</a>
           </div>
 
           <div className="mt-8 rounded-3xl border border-white/10 bg-[#0f0a19]/50 p-6">
