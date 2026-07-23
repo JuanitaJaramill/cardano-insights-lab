@@ -621,6 +621,113 @@ The next step is to complete controlled user testing with real cases and prepare
 
 The demo and final presentation will be documented as the Week 12 update.
 
+### Week 12 — Final demo, submission materials, and real user testing
+
+During Week 12, CIL Market Bridge reached its final Piece of Pie submission stage.
+
+The focus was on completing the final demo, validating the end-to-end user journey, documenting the project clearly, and preparing the public materials for review.
+
+**Final demo:**
+https://drive.google.com/file/d/1pLLXdPJ_vdSZSDV6xh7-PAQAuyNJ4O-m/view?usp=sharing
+
+## Final user journey
+
+The final demo presents the complete CIL Market Bridge flow:
+
+**Landing page → CIL Market Bridge app → Free Case Map → Beta Opportunity Path → Gumroad checkout → Tally request form → human-reviewed case exploration**
+
+This journey shows how a non-technical user can:
+
+* enter the app from the landing page;
+* describe a business concern;
+* select relevant areas such as trust, traceability, payments, disputes, certificates, transparency, or coordination;
+* receive a Free Case Map;
+* review the main pattern detected in the case;
+* unlock the paid Beta Opportunity Path;
+* complete checkout through Gumroad;
+* access the Tally request form;
+* and submit the case for deeper human-reviewed exploration.
+
+## What the demo shows
+
+The demo shows CIL Market Bridge as a working early beta, not only as a concept.
+
+It includes:
+
+* the updated landing page;
+* the guided case flow;
+* the Free Case Map;
+* combination-based result logic;
+* editable case flow;
+* restart option;
+* the Beta Opportunity Path section;
+* Gumroad payment checkout;
+* Tally form access after payment;
+* and a real case review workflow.
+
+The purpose of the product remains clear: CIL Market Bridge does not automatically recommend blockchain.
+
+Instead, it helps users understand whether blockchain deserves to be explored at all, and whether a simpler alternative, business process, or commercial validation step may be more appropriate.
+
+## Real user testing
+
+A controlled test was completed with a real case.
+
+One test submission came from an independent farmer who depends on a centralized intermediary to sell production. The review did not simply recommend blockchain.
+
+Instead, the analysis identified a deeper business issue:
+
+* limited market access;
+* low bargaining power;
+* dependence on a centralized intermediary;
+* and lack of visibility in the value chain.
+
+Blockchain was treated as a possible future support layer for traceability, transparency, records, reputation, and coordination — not as the first step by default.
+
+The first recommended step was commercial: validate direct buyers, understand the current value chain, and test whether a more direct route to market could work.
+
+This test case helped confirm the core value of CIL Market Bridge:
+
+**Start with the business problem. Then evaluate whether blockchain is relevant.**
+
+## Final materials prepared
+
+The final submission materials include:
+
+* final demo video;
+* final Piece of Pie presentation;
+* updated public README;
+* deployed app link;
+* landing page link;
+* Gumroad payment product;
+* Tally request form;
+* real user testing evidence;
+* Week 12 public update;
+* and public links for verification.
+
+## Current status
+
+CIL Market Bridge is still an early beta, but it now has a working journey:
+
+**problem exploration → free case mapping → paid review → real user testing**
+
+The app can help non-technical users explore business concerns before investing in technology that may not fit.
+
+## Next steps after the hackathon
+
+The next steps are:
+
+* continue testing with more users;
+* improve the analysis logic;
+* refine the Beta Opportunity Path review format;
+* improve the connection between the landing page, app, payment, and review process;
+* explore partnerships with chambers of commerce, entrepreneurship organizations, incubators, accelerators, cooperatives, and business support programs;
+* and keep building a clearer bridge between real business needs and blockchain evaluation.
+
+CIL Market Bridge was built as a solo project during Piece of Pie, with the goal of making blockchain easier to evaluate from the business side — with more clarity, less hype, and a stronger focus on real problems.
+
+| Week 12 | Final demo, submission materials, Gumroad checkout, Tally request flow, and real user testing completed. Demo: https://drive.google.com/file/d/1pLLXdPJ_vdSZSDV6xh7-PAQAuyNJ4O-m/view?usp=sharing |
+
 
 
 
